@@ -1,0 +1,57 @@
+.banner img{
+    height: 200px;
+}
+.sidebar{
+    background: rgb(255, 255, 255);
+    width: 10%;
+    position: absolute;
+    top: 40%;
+    padding-left: 1%;
+    padding-top: 70px;
+}
+.ava a img{
+    width: 200px;
+    border-radius: 50%;
+}
+.ava a p{
+    margin-left: 80px;
+}
+.contain{
+    background: rgb(255, 255, 255);
+    width: 60%;
+    padding-left: 4%;
+    padding-top: 20px;
+}
+.vid-info{
+    color: #5a5a5a;
+    font-size: 13px;
+}
+.vid-info a {
+    color: #000;
+    font-weight: 60px;
+    display: block;
+    margin-left: 200px;
+    line-height: 20.5px;
+}
+.bcontain{
+    display: flex;
+    flex-direction: row;
+}
+.contain1{
+    background: rgb(255, 255, 255);
+    width: 40%;
+    padding-right: 1%;
+    padding-top: 20px;
+}
+.vid-info1{
+    color: #5a5a5a;
+    font-size: 13px;
+}
+.vid-info1 a{
+    color: #000;
+    font-weight: 60px;
+    display: block;
+    margin-left: 50px;
+    line-height: 20.5px;
+}
+

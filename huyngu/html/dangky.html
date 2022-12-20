@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src='../js/dangky.js'></script>
+    <link rel="stylesheet" type="text/css" href="../css/dangnhap_dangky.css">
+    
+    <title>Đăng Ký</title>
+</head>
+<body class="tongdn">
+    <div class="dangnhap">
+            
+                <form onsubmit="signup()">
+                    <ul class="nhapdn">
+
+                        <li class="dn1">Đăng ký</li>
+                        <table width="500px"class="dangkybang" >
+                            <tr>
+                                <td class="name">
+                                    <p><ion-icon name="person-outline"></ion-icon>Tên tài khoản</p>
+                                    <input type="text" id="name1" placeholder="Nhập tên đăng nhập" ></td> 
+                            </tr>
+                            <tr>
+                                <td class="nickname">
+                                    <p><ion-icon name="body-outline"></ion-icon>Họ và tên</p>
+                                    <input type="text" id="nickname" placeholder="Nhập nickname hiện" > </td>
+                            </tr>
+                            <tr>
+                                <td class="sdt">
+                                    <ion-icon name="call-outline"></ion-icon><p>Số điện thoại</p>
+                                   <input name="so"type="number" id="num1" placeholder="Nhập số điện thoại"></td>
+                            </tr>
+                            <tr>
+                                <td class="year">
+                                    
+                                    <ion-icon name="calendar-outline"></ion-icon><p>Năm sinh</p>
+                                        <input name="sinh"type="date" id="year1" placeholder="Nhập ngày tháng năm sinh">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="gioit">
+                                    
+                                        <ion-icon name="male-female-outline"></ion-icon>
+                                         <p>Giới tính</p> 
+                                        <input type="radio" name="gender" value="Nam" id="nam" checked>Nam ♂;
+                                        <input type="radio" name="gender" value="Nu"id="nam" >Nữ ♀;
+                                        <input type="radio" name="gender" value="LGBT" id="nam"> Khác;
+                                    
+                                </td>
+                            </tr>
+                            <tr> <td class="gmail">
+                                
+                                    <ion-icon name="at-circle-outline"></ion-icon><p>Email</p>
+                                    <input name="gmail2"type="email"id="gmail1" placeholder="Nhập gamil Nhập thư"></li>
+                                
+                            </td></tr>
+                            <tr>
+                                <td class="mk">
+                                    
+                                        <ion-icon name="lock-closed-outline"></ion-icon><p>Nhập mật khẩu</p>
+                                        <input type="password" placeholder="Nhập mật khẩu phải nhớ"id="pass1">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox">
+                                    <input type="checkbox" id="on" name="on" >
+                                    <p>Bạn đồng ý với <a href="dieukhoan.html" target="_blank">Điều Khoản Dịch Vụ</a> và Chính Sách Bảo Mật</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="andn">
+                                      <input onclick="dy()" type="submit" value="Đăng ký" >
+                                        <a href="dangnhap.html" class="quaylai">
+                                            <ion-icon name="arrow-back-outline"></ion-icon>
+                                        </a>
+                                </td>
+                            </tr>
+                            </ul>
+                        </table>
+            </form>
+           
+        </div>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
