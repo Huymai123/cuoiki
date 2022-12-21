@@ -1,0 +1,181 @@
+:root{
+  --background-:#cededa ;
+  --font-letter1-:#10b90d;
+  --font-letter2-:rgb(219, 178, 178);
+  --font-letter3-:rgb(67, 196, 35);
+  --font-letter4-:rgb(255, 68, 174);
+  --font-letter5-:#120808;
+  --buttom-1-:#00bbff;
+  --buttom-2-:#ffffff;
+  --buttom-3-:#7f49fd;
+  --buttom-4-:#ce132f;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+  html,body {
+  
+    width: 100%;
+      height: 100%;
+      background-color: var(--background-);
+      color:var(--font-letter5-);
+  }
+.dangnhap{
+    width: 100%;
+    height: 100%;
+    margin-top: -100px;
+    
+  }
+  /* .anhdangnhap{
+    width: 50%;
+    height: 110%;
+    
+  } */
+  
+  .dangnhap .nhapdn{
+    text-align: center;
+  }
+  .dangnhap .nhapdn>li{
+    list-style: none;
+    font-size: 20px;
+    color: #ff3131;
+  
+  }
+  .dangnhap .nhapdn .dn1{
+    text-decoration: none;
+    font-family: 'Itim',cursive;
+    font-size: 50px;
+    margin-top: 100px;
+    font-weight: bold;
+    color: var(--font-letter2-);
+  }
+  
+  .dangnhap .nhapdn li input{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #002fff;
+    
+  }
+  .dangnhap .nhapdn .nametk input{
+    margin-left: 20px;
+  }
+  .dangnhap .nhapdn .pass input{
+    margin-left: 60px;
+  }
+  .dangnhap .nhapdn .num1 input{
+    margin-left: 30px;
+  }
+  .dangnhap .nhapdn .andn button{
+    background-color: var(--buttom-1-);
+    color: var(--font-letter5-);
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 50px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+  
+  }
+  .dangnhap .nhapdn .andn button:hover{
+    background-color: var(--buttom-4-);
+  }
+  .nhapdn .andn input:hover{
+    background-color: var(--buttom-4-);
+    color: var(--font-letter3-);
+  }
+  .nhapdn .quen a{
+    text-decoration: none;
+   font-size: 20px;
+   color: var(--font-letter5-);
+  }
+  .nhapdn .quen a:hover{
+   color: var(--font-letter2-);
+  }
+  .nhapdn .quen{
+   margin-top: 20px;
+   margin-left: -300px;
+  }
+  .nhapdn .dk a{
+    text-decoration: none;
+   font-size: 20px;
+   color: var(--font-letter5-);
+  }
+  .nhapdn .dk a:hover{
+    color: var(--font-letter2-);
+  }
+  .nhapdn .dk{
+   margin-top: -20px;
+   margin-left: 460px;
+  }
+  .dangkybang{
+    margin: 50px auto;
+  }
+  .dangkybang tr td{
+    height: 50px;
+    display: flex;
+  }
+  input{
+    background-color: var(--buttom-2-);
+    border-radius: 10px;
+  
+  }
+  input::placeholder { 
+    color: var(--font-letter2-);
+  }
+  .dangkybang tr td input{
+    margin: auto;
+    height: 30px;
+    width: 200px;
+    margin-top: -5px;
+  }
+  .dangkybang .gioit input{
+    width:50px;
+    height: 20px;
+  }
+  .dangkybang .sdt input{
+    margin-left: 100px;
+  }  
+  .dangkybang .nickname input{
+    margin-left: 122px;
+  }
+  .dangkybang .year input{
+    margin-left: 122px;
+    color: var(--font-letter2-);
+  }
+  .dangkybang .gmail input{
+    margin-left: 146px;
+  }
+  
+  .dangkybang .mk input{
+    margin-left: 86px;
+  }
+  .dangkybang .andn input{
+    margin-left: 196px;
+    background-color:var(--buttom-1-) ;
+    border-radius: 10px;
+  }
+  .dangkybang .andn .quaylai ion-icon{
+    margin-left: -120px;
+    margin-top: -8px;
+  
+  }
+  .dangkybang .checkbox input{
+    width: 20px;
+    height: 20px;
+  }
+  .dangkybang .andn .quaylai ion-icon{
+    width: 40px;
+    height: 40px;
+    background-color: var(--buttom-1-);
+    border-radius: 50px;
+  }
+  .dangkybang .andn .quaylai ion-icon:hover{
+    background-color: var(--buttom-4-);
+  }

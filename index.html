@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,8 @@
     <link rel = "stylesheet" href="youtube.css">
     <link rel="icon" href="https://img.icons8.com/color/48/000000/youtube-play.png">
 </head>
+<body>
+    
     <nav class="flex-div" >
         <div class="nav-left flex-div">
             <img src="https://img.icons8.com/plumpy/24/000000/menu--v3.png" class="menu-icon">
@@ -40,20 +43,34 @@
                 <div class="search-box flex-div">
                      <input type="text" placeholder="Search">
                      <img src="youtube1/search.png" alt="">
-                </div>
-                <img src="https://img.icons8.com/external-others-inmotus-design/67/000000/external-Mic-virtual-keyboard-others-inmotus-design.png" alt="" class="mic-icon">
-                
+                </div>     
             </div>
         </div>
-
+    
         
         <div class="nav-right flex-div">
-            <img src="youtube1/more.png">
-            <img src="https://img.icons8.com/ios-filled/50/000000/appointment-reminders--v2.png">
-            <a href="thanhvien.html"><img src="youtube1/Jack.png" class="user-icon"></a>
+            <ul class="menu chuong">
+                <li><img src="https://img.icons8.com/ios-filled/50/000000/appointment-reminders--v2.png">
+                    <ul>
+                        <li>hiện không có thông báo nào</li>
+                    </ul>
+                </li>
+            </ul>
+           
+           <ul class="menu"id="taik" >
+            <li id="logo"><img src="youtube1/Jack.png" class="user-icon">
+            <ul>
+                <li><a href="html/user.html">Thông tin cá nhân</a></li>
+                <a href="#" id="dangx"><li>Đăng xuất</li></a>
+            </ul>
+            </li>
+           </ul>
+           <ul class="menu"id="huy">
+                <li><a href="html/dangnhap.html">Đăng nhập</a></li>
+           </ul>
         </div>
-    </nav>
-    
+    </nav>   
+
 <!-----------------sidebar---------------->
      <div class="sidebar">
         <img src="youtube1/sidebar.jpg" alt="">
@@ -139,8 +156,35 @@
 
 
      </div>
+    </body>
+    <script>
+        // document.addEventListener("DOMContentLoaded",function(){
+            let user= sessionStorage.getItem("user");
+                console.log(user);
+                var acc=document.getElementById('taik');
+                
+                var no_acc=document.getElementById("huy");
+                console.log(no_acc);
+                console.log(acc);
+                if(user!=null){
+                    no_acc.classList.add('no_acc');
+                    acc.classList.remove('no_acc');
+                }
+                else{ 
+                    acc.classList.add("no_acc");
+                   no_acc.classList.remove('no_acc');
+                   
+                }
+                var xoa=document.getElementById("dangx");
+                xoa.onclick=function(){
+                    sessionStorage.removeItem("user");
+                    acc.classList.add("no_acc");
+                   no_acc.classList.remove('no_acc');
+                }
 
-     
+        // })
+        
+    </script>
 </html>
 
 
